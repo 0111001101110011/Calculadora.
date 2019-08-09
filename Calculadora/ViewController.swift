@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//Gabriel Pereda Miranda
 class ViewController: UIViewController {
 
     @IBOutlet weak var sldPorcentajePropina: UISlider!
