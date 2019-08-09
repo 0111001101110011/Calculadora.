@@ -18,7 +18,22 @@ class ViewController: UIViewController {
     
     
     @IBAction func doChangeValores(_ sender: Any) {
-    }
+        lblPorcentajePropina.text = "\(sldPorcentajePropina.value)%"
+        var porcentajePropina = 0.0
+        
+        porcentajePropina = Double(sldPorcentajePropina.value) / 100
+        porcentajePropina.round()
+        lblPorcentajePropina.text = "\(porcentajePropina)%"
+        porcentajePropina = porcentajePropina / 100.0
+        
+        let cantidadPropina = Double(txtTotalSinPropina.text!)! * porcentajePropina
+        
+        lblCantidadPropina.text = "$\(cantidadPropina)"
+    
+        let totalConPropina = Double(txtTotalSinPropina.text!)! + cantidadPropina
+        lblTotalConPropina.text = "$\(totalConPropina)"
+        
+     }
     
     
     

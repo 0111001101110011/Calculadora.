@@ -32,6 +32,9 @@
                                 <rect key="frame" x="22" y="116" width="289" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.19739353279999999" green="1" blue="0.75444997150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="doChangeValores:" destination="BYZ-38-t0r" eventType="valueChanged" id="rBn-g1-bCh"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FC4-4s-oGM" userLabel="etiqueta porcentaje">
                                 <rect key="frame" x="24" y="153" width="34" height="22"/>
